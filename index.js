@@ -153,15 +153,15 @@ function lowPopulationAnimals()
   and an initial value for the count.
   */
 
-  function USApop(pops)
+function USApop(pops)
+{
+  const task4ReducePop = pops.reduce(function(accumulator, item)
   {
-    const task4ReducePop = pops.reduce(function(accumulator, item)
-    {
-      return accumulator + item.population;
-    }, 0);
+    return accumulator + item.population;
+  }, 0);
 
-    return task4ReducePop;
-  }
+  return task4ReducePop;
+}
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
@@ -169,12 +169,11 @@ function lowPopulationAnimals()
     * Use the higher-order function consume with 3 parameters: a, b and cb
     * The first two parameters can take any argument (we can pass any value as an argument)
     * The last parameter accepts a callback
-    * The consume function should return the invocation of cb, passing a and b into cb as arguments
+    * The consume function should return the invocation of cb, 
+    * passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
-  }
+function consume(a, b, cb) { return cb(a,b); }
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
