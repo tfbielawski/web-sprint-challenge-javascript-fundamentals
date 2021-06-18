@@ -108,12 +108,18 @@ function animalNames(names)
   For example: ['jackal, asiatic', .....]
   */
 
-  //Define the function
-  function lowerCaseNames()
-  {
-    //.map() zooAnimals and return animal_name.toL
-    zooAnimals.map(function(item) { return item.animal_name.toLowerCase();});
-  }
+const request2Array = [];
+//Define the function
+function lowerCaseNames()
+{
+  //.map() zooAnimals and return animal_name.toLowerCase()
+  request2Array = zooAnimals.map(function(item) 
+  { 
+    item.animal_name.toLowerCase();
+  });
+
+  return request2Array;
+}
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
