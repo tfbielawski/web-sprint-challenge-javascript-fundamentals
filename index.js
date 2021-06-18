@@ -108,16 +108,17 @@ function animalNames(names)
   For example: ['jackal, asiatic', .....]
   */
 
-const request2Array = [];
 //Define the function
-function lowerCaseNames()
+function lowerCaseNames(namess)
 {
   //.map() zooAnimals and return animal_name.toLowerCase()
-  request2Array = zooAnimals.map(function(item) 
+  let request2Array = zooAnimals.map(function(item) 
   { 
-    item.animal_name.toLowerCase();
+    //Return name to lower case
+    return item.animal_name.toLowerCase();
   });
 
+  //Return the new array
   return request2Array;
 }
   
