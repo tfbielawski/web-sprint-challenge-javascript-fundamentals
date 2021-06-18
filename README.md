@@ -28,14 +28,34 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+.map() is used to convert data and returns a new array.
+.forEach() iterates through arrays like for loops, does not stop, and does not return a new array.
 
 2. Explain the difference between a callback and a higher order function.
+A higher order function is a function that receives a lower function as a parameter. The lower function is the callback function. Callback function is passed as an argument to a higher order function.
 
 3. Can you explain what a closure is and how you used it in the counter function? 
+Closure is when a lower function reaches into a higher function to obtain
+a variable. The for loop reached upward into summation to retrieve the value from accumulator. 
 
 4. Describe the four principles of the 'this' keyword.
+ i. Window / Global Object binding: "this" holds the value of the entire
+    window/console object.
+
+ ii. Implicit Binding: used in dot notation. 
+     The object before (to the left of)the dot is bound to "this." 
+
+.iii New Binding: used Constructor() function. 
+    refers to the object created and returned by the constructor() function.
+
+.iV Explicit Binding: .call, .apply, .bind
+    .call Immediately invokes the function. Pass arguments 1 by 1.
+    .apply Immediately invokes the function. Pass arguments as/in an array.
+    .bind Does not immediately invoke the function. Pass arguments 1 by 1. 
+    .bind returns a new function to be invoked later.
 
 5. Why do we need super() in an extended class?
+super() applies the attributes from the superclass to the subclass so that it can have access to those attributes in the superclass. Super() makes the child class inherit from the parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

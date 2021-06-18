@@ -153,13 +153,17 @@ function lowPopulationAnimals()
   and an initial value for the count.
   */
 
+//Define the function, pass in pops
 function USApop(pops)
 {
+  //Execute reduce() passing accumulator and item, and assign to task4ReducePop
   const task4ReducePop = pops.reduce(function(accumulator, item)
   {
+    //Assign the population to accumulator
     return accumulator + item.population;
   }, 0);
 
+  //Return the array
   return task4ReducePop;
 }
   
@@ -302,10 +306,12 @@ console.log(cuboidTwo.surfaceArea()); // 130
 
 
 
-
-
-// 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area. 🦄 💪
-  
+/* 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class 
+called CubeMaker.  Find out the formulas for volume and surface area
+ for cubes and create those methods using the dimension properties 
+ from CuboidMaker.  Test your work by logging out your volume and 
+ surface area. 🦄 💪
+ */  
 
 
   /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
