@@ -109,7 +109,7 @@ function animalNames(names)
   */
 
 //Define the function
-function lowerCaseNames(namess)
+function lowerCaseNames()
 {
   //.map() zooAnimals and return animal_name.toLowerCase()
   let request2Array = zooAnimals.map(function(item) 
