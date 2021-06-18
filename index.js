@@ -1,3 +1,11 @@
+/** *
+ * Tom Bielawski
+ * Lambda Shcool WEB45
+ * Unit 1, Module 4, Day 5
+ * web-sprint-challenge-javascript-fundementals/index.js
+ * 6/18/2021 
+ * **/
+
 //🚀🚀🚀  Topic #1 Closures 🚀🚀🚀//
 /* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
 Study the code below and explain in your own words why nested function can access the variable internal. */
