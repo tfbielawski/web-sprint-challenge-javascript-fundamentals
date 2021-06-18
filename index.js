@@ -41,11 +41,22 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. 
 Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) 
+//Define the function, pass in number
+function summation(number) 
 {
-  /*Your Code Here*/
-
+  //Declare and init accumulator to 0
+  let accumulator = 0;
+  //For loop to iterate and do the math
+  for (let i = 0; i <= number; i++)
+  {
+    //For each iteration, add i to accumulator
+    accumulator += i;
+  }
+  //Return the accumulated total
+  return accumulator;
 }
+//Display the results
+//console.log(summation(4));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -66,14 +77,29 @@ const zooAnimals = [
   
   /* 🦁🦁🦁 Request 1: .forEach() 🦁🦁🦁
   The zoos want to display both the scientific name and the animal name in front of the habitats. 
-  Use animalNames to populate and return the displayNames array with only the animal name and scientific name of each animal. 
-  displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
+  Use animalNames to populate and return the displayNames array with only the animal name and scientific name 
+  of each animal  displayNames will be an array of strings, and each string should follow this pattern: 
+  "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+//Declare empty array to hold values
+const displayNames = [];
+
+//Define the function
+function animalNames(names)
+{
+  //For each (item) in names
+  names.forEach(function(item)
+  {
+    //Push to the new array
+    displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)
+  });
   
+  //Return the new array
+  return displayNames;
+}
+
+
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
