@@ -25,7 +25,11 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+/** 
+ * nestedFunction() has access to internal because internal is in the higher 
+ * function. Lower functions can reach up to higher functions. 
+ * Higher functions cannot reach down to lower functions 
+ **/
 
 
 
@@ -34,12 +38,14 @@ myFunction();
     1. Receive a number 
     2. Use a counter to return the summation of that number. 
     
-For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
+For example, `summation(4)` should return 10 because 1+2+3+4 is 10. 
+Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation(/*Your Code Here*/) 
+{
   /*Your Code Here*/
 
-  }
+}
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
