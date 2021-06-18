@@ -55,8 +55,7 @@ function summation(number)
   //Return the accumulated total
   return accumulator;
 }
-//Display the results
-//console.log(summation(4));
+
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -225,9 +224,11 @@ cuboid's volume or surface area. Cuboids are similar to cubes but do not have ev
 //Define the function with parameters for length,width, height. Init as object
 function CuboidMaker(attributes)
 {
-  //Assign the values
+  //Assign length to this.length
   this.length = attributes.length;
+  //Assign width to this.width
   this.width = attributes.width;
+  //Assign height to this.height
   this.height = attributes.height;
 }
 
@@ -247,11 +248,12 @@ CuboidMaker.prototype.volume = function(){return this.length * this.width * this
   Formula for cuboid surface area of a cube: 
   2 * (length * width + length * height + width * height)  */
 
-//Define the surfaceArea prototype function. Return 2 *((l * w) + (l * h) + (w * h))
+//Define the surfaceArea prototype function. 
 CuboidMaker.prototype.surfaceArea = function()
 {
+  //Return 2 *((l * w) + (l * h) + (w * h))
   return 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height));
-  }
+}
 
 
 /* 🐴🐴🐴 Step 4: Create a new object that uses CuboidMaker 🐴🐴🐴
