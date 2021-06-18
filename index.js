@@ -214,25 +214,26 @@ cuboid's volume or surface area. Cuboids are similar to cubes but do not have ev
  */
 
 /* 🐴🐴🐴 Step 1: Base Constructor 🐴🐴🐴
- Use the constructor function named CuboidMaker to accept properties for length, width, and height which can be initialized as an object
+ Use the constructor function named CuboidMaker to accept properties for length, width,
+ and height which can be initialized as an object
 */
 
 //Define the function with parameters for length,width, height
-function CuboidMaker(length, width, height)
+function CuboidMaker(attributes)
 {
   //Assign the values
-  length = this.length;
-  this.width = width;
-  this.height = height;
+  this.length = attributes.length;
+  this.width = attributes.width;
+  this.height = attributes.height;
 }
-
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
   Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
 
-
+//
+CuboidMaker.prototype.volume = function() { return this.length * width * height; }
 
 
 /* 🐴🐴🐴 Step 3: Surface Area Method 🐴🐴🐴
