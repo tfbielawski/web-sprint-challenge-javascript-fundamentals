@@ -228,12 +228,17 @@ function CuboidMaker(attributes)
 }
 
 /* 🐴🐴🐴 Step 2: Volume Method 🐴🐴🐴
-  Create a method called volume using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
+  Create a method called volume using CuboidMaker's prototype that returns the volume of a 
+  given cuboid's length, width, and height
   Formula for cuboid volume: length * width * height   */
 
 
 //
-CuboidMaker.prototype.volume = function() { return this.length * width * height; }
+CuboidMaker.prototype.volume = function()
+{
+  return attributes.length * attributes.width * attributes.height;
+}
+
 
 
 /* 🐴🐴🐴 Step 3: Surface Area Method 🐴🐴🐴
@@ -242,7 +247,10 @@ CuboidMaker.prototype.volume = function() { return this.length * width * height;
   2 * (length * width + length * height + width * height)  */
 
 
-
+  CuboidMaker.prototype.surfaceArea = function()
+  {
+    return this.length * this.width + this.length * this.height + this.width * this.height;
+  }
 
 
 /* 🐴🐴🐴 Step 4: Create a new object that uses CuboidMaker 🐴🐴🐴
