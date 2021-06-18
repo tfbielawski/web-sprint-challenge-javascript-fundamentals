@@ -125,12 +125,24 @@ function lowerCaseNames()
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
-  Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
+  Using lowPopulationAnimals use .filter() to create a new array of objects 
+  which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+
+//Define the function
+function lowPopulationAnimals(animalsy)
+{
+  //Declare array and assign value from map
+  let request3Array = zooAnimals.filter(function(item)
+  {
+    //Return pop < 5
+    return item.population < 5;
+    
+  });
+  //Return new array
+  return request3Array;
+}
   
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
